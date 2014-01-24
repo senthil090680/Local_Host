@@ -1,0 +1,13 @@
+
+		HOST SIDE FILES
+		---------------
+
+config.php     		  //  UI configration of Upload / Download .Host to Base and Base to Host
+save.php      		  //Creation of cron job based on configration, and saving UPLOAD/DOWNLOAD configration to the database.
+
+schedule.php   		  // Process of Downloading datatables to BASE from HOST . nessarcy updates on database log  , pinging the Remote Base, Invoking send.php
+send.php      		  // creates a list of csv files for corresponding database tables , invokes base/functions/load.php to transfer files.
+
+
+scheduleUpload.php   //Process of Uploading datatables from BASE to HOST, updates on databases log . pinging the remote base , Invoking base/functions.load.php
+load.php             //
